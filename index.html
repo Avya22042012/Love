@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>✨ A Birthday Surprise ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <div class="background">
+        <div class="stars"></div>
+        <div class="moon"></div>
+    </div>
+
+
+    <!-- =========================
+         MUSIC BUTTON
+    ========================== -->
+
+    <button class="music-btn" onclick="toggleMusic()">
+        🎵
+    </button>
+
+    <audio id="music" loop>
+        <!-- Add your music file here later -->
+        <!-- <source src="music.mp3" type="audio/mpeg"> -->
+    </audio>
+
+
+    <!-- =========================
+         INTRO SCREEN
+    ========================== -->
+
+    <section class="intro" id="intro">
+
+        <div class="intro-glow"></div>
+
+        <div class="intro-content">
+
+            <div class="sparkle">✦</div>
+
+            <p class="eyebrow">
+               <h3> A LITTLE SURPRISE FOR YOU MY WIFE</h3>
+            </p>
+
+            <h1>
+                Something<br>
+                <span>Beautiful</span>
+                Awaits...
+            </h1>
+
+            <p class="intro-text">
+                Today is a very special day.
+                <br>
+                So I made something just for you. ❤️
+            </p>
+
+            <button class="open-btn" onclick="openSurprise()">
+
+                <span class="gift">🎁</span>
+
+                <span>
+			I lOVE U MY WIFE
+				<BR>
+                     Now Open Your Surprise
+                </span>
+
+                <span class="arrow">→</span>
+
+            </button>
+
+            <div class="scroll-hint">
+                ✦ tap to begin ✦
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="main">
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="floating-heart heart1">♡</div>
+            <div class="floating-heart heart2">♡</div>
+            <div class="floating-heart heart3">♡</div>
+            <div class="floating-heart heart4">♡</div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ✦ TODAY IS YOUR DAY ✦
+                </p>
+
+                <h1 class="birthday-title">
+                    Happy
+                    <span>Birthday</span>
+                </h1>
+
+                <div class="name">
+                    Meri Patni
+                </div>
+
+                <div class="cake">
+                    🎂
+                </div>
+
+                <p class="hero-message">
+                    May this new chapter of your life
+                    be filled with countless reasons
+                    to smile.
+                </p>
+
+                <div class="scroll-down">
+                    ↓
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TYPING MESSAGE
+        ========================== -->
+
+        <section class="typing-section">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    ✦ JUST FOR YOU ✦
+                </p>
+
+                <h2>
+                    There are some things
+                    <br>
+                    words can't fully say...
+                </h2>
+
+                <div class="typing-box">
+
+                    <span id="typing"></span>
+                    <span class="cursor">|</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BIRTHDAY LETTER
+        ========================== -->
+
+        <section class="letter-section">
+
+            <div class="letter-card">
+
+                <div class="letter-decoration">
+                    ✦
+                </div>
+
+                <p class="eyebrow">
+                    A LETTER FOR YOU MY WIFE
+                </p>
+
+                <h2>
+                    Dear Birthday Wife,
+                </h2>
+
+                <div class="letter-line"></div>
+
+                <p>
+                    Today isn't just another date on the calendar.
+                    It's a reminder of how wonderful it is that
+                    someone like you exists.
+                </p>
+
+                <p>
+                    I hope this year brings you moments that make
+                    you laugh until your cheeks hurt, memories that
+                    stay with you forever, and dreams that slowly
+                    become reality.
+                </p>
+
+                <p>
+                    Never forget how special you are for me.
+                    Keep your beautiful smile, keep believing in
+                    yourself, and keep shining in your own way.
+                </p>
+
+                <p class="gold-text">
+                    May your happiest days be ahead of you. ✨
+                </p>
+
+                <div class="signature">
+                    With lots of wishes ❤️
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     GOOD MEMORIES
+========================= -->
+
+<section class="memories-section">
+
+    <p class="eyebrow">
+        ✦  ✦ LITTLE MOMENTS ✦ ✦
+    </p>
+
+    <h2>
+         Beautiful Memories 📸
+    </h2>
+
+    <p class="section-subtitle">
+                Every beautiful moment deserves a place to shine.
+            </p>
+
+
+
+    <div class="gallery">
+
+        <!-- PHOTO 01 -->
+        <div class="memory-card">
+            <img src="photo1.jpg" alt="Memory 1">
+            <div class="memory-caption">
+                <span>01</span>
+                A beautiful moment ❤️
+            </div>
+        </div>
+
+
+        <!-- PHOTO 02 -->
+        <div class="memory-card">
+            <img src="photo2.jpg" alt="Memory 2">
+            <div class="memory-caption">
+                <span>02</span>
+                A beautiful memory ✨
+            </div>
+        </div>
+
+
+        <!-- PHOTO 03 -->
+        <div class="memory-card">
+            <img src="photo3.jpg" alt="Memory 3">
+            <div class="memory-caption">
+                <span>03</span>
+                A moment to remember 💖
+            </div>
+        </div>
+
+
+        <!-- PHOTO 04 -->
+        <div class="memory-card">
+            <img src="photo4.jpg" alt="Memory 4">
+            <div class="memory-caption">
+                <span>04</span>
+                Beautiful days 🌸
+            </div>
+        </div>
+
+
+        <!-- PHOTO 05 -->
+        <div class="memory-card">
+            <img src="photo5.jpg" alt="Memory 5">
+            <div class="memory-caption">
+                <span>05</span>
+                Precious moment ✨
+            </div>
+        </div>
+
+
+        <!-- PHOTO 06 -->
+        <div class="memory-card">
+            <img src="photo6.jpg" alt="Memory 6">
+            <div class="memory-caption">
+                <span>06</span>
+                Forever remembered ❤️
+            </div>
+        </div>
+
+
+        <!-- PHOTO 07 -->
+        <div class="memory-card">
+            <img src="photo7.jpg" alt="Memory 7">
+            <div class="memory-caption">
+                <span>07</span>
+                Happy memories 🌷
+            </div>
+        </div>
+
+
+        <!-- PHOTO 08 -->
+        <div class="memory-card">
+            <img src="photo8.jfif" alt="Memory 8">
+            <div class="memory-caption">
+                <span>08</span>
+                A special day 💫
+            </div>
+        </div>
+
+
+        <!-- PHOTO 09 -->
+        <div class="memory-card">
+            <img src="photo9.jfif" alt="Memory 9">
+            <div class="memory-caption">
+                <span>09</span>
+                Little moments ❤️
+            </div>
+        </div>
+
+
+        <!-- PHOTO 10 -->
+        <div class="memory-card">
+            <img src="photo10.jfif" alt="Memory 10">
+            <div class="memory-caption">
+                <span>10</span>
+                Sweet memories 🌙
+            </div>
+        </div>
+
+
+        <!-- PHOTO 11 -->
+        <div class="memory-card">
+            <img src="photo11.jfif" alt="Memory 11">
+            <div class="memory-caption">
+                <span>11</span>
+                Beautiful time ✨
+            </div>
+        </div>
+
+
+        <!-- PHOTO 12 -->
+        <div class="memory-card">
+            <img src="photo12.jpg" alt="Memory 12">
+            <div class="memory-caption">
+                <span>12</span>
+                A precious smile 😊
+            </div>
+        </div>
+
+
+        <!-- PHOTO 13 -->
+        <div class="memory-card">
+            <img src="photo13.jfif" alt="Memory 13">
+            <div class="memory-caption">
+                <span>13</span>
+                One to remember 💖
+            </div>
+        </div>
+
+
+        <!-- PHOTO 14 -->
+        <div class="memory-card">
+            <img src="photo14.jfif" alt="Memory 14">
+            <div class="memory-caption">
+                <span>14</span>
+                Beautiful memories 🌸
+            </div>
+        </div>
+
+
+        <!-- PHOTO 15 -->
+        <div class="memory-card">
+            <img src="photo15.jpg" alt="Memory 15">
+            <div class="memory-caption">
+                <span>15</span>
+                A happy moment 🎉
+            </div>
+        </div>
+
+
+        <!-- PHOTO 16 -->
+        <div class="memory-card">
+            <img src="photo16.jfif" alt="Memory 16">
+            <div class="memory-caption">
+                <span>16</span>
+                Precious memories ❤️
+            </div>
+        </div>
+
+
+        <!-- PHOTO 17 -->
+        <div class="memory-card">
+            <img src="photo17.jfif" alt="Memory 17">
+            <div class="memory-caption">
+                <span>17</span>
+                A beautiful day ☀️
+            </div>
+        </div>
+
+
+        <!-- PHOTO 18 -->
+        <div class="memory-card">
+            <img src="photo18.jfif" alt="Memory 18">
+            <div class="memory-caption">
+                <span>18</span>
+                Forever special ✨
+            </div>
+        </div>
+
+
+        <!-- PHOTO 19 -->
+        <div class="memory-card">
+            <img src="photo19.jfif" alt="Memory 19">
+            <div class="memory-caption">
+                <span>19</span>
+                Another beautiful memory 💕
+            </div>
+        </div>
+
+
+        <!-- PHOTO 20 -->
+        <div class="memory-card">
+            <img src="photo20.jpg" alt="Memory 20">
+            <div class="memory-caption">
+                <span>20</span>
+                A moment of happiness 🌸
+            </div>
+        </div>
+
+
+        <!-- PHOTO 21 -->
+        <div class="memory-card">
+            <img src="photo21.jfif" alt="Memory 21">
+            <div class="memory-caption">
+                <span>21</span>
+                Beautiful memories ✨
+            </div>
+        </div>
+
+
+        <!-- PHOTO 22 -->
+        <div class="memory-card">
+            <img src="photo22.jpeg" alt="Memory 22">
+            <div class="memory-caption">
+                <span>22</span>
+                A special memory ❤️
+            </div>
+        </div>
+
+
+        <!-- PHOTO 23 -->
+        <div class="memory-card">
+            <img src="photo23.jpeg" alt="Memory 23">
+            <div class="memory-caption">
+                <span>23</span>
+                A day worth remembering 🌙
+            </div>
+        </div>
+
+
+        <!-- PHOTO 24 -->
+        <div class="memory-card">
+            <img src="photo24.jpeg" alt="Memory 24">
+            <div class="memory-caption">
+                <span>24</span>
+                Sweet moments 💖
+            </div>
+        </div>
+
+
+        <!-- PHOTO 25 -->
+        <div class="memory-card">
+            <img src="photo25.jpeg" alt="Memory 25">
+            <div class="memory-caption">
+                <span>25</span>
+                A beautiful chapter 📖
+            </div>
+        </div>
+
+
+        <!-- PHOTO 26 -->
+        <div class="memory-card">
+            <img src="photo26.jpeg" alt="Memory 26">
+            <div class="memory-caption">
+                <span>26</span>
+                A memory forever ✨
+            </div>
+        </div>
+
+
+        <!-- PHOTO 27 -->
+        <div class="memory-card">
+            <img src="photo27.jfif" alt="Memory 27">
+            <div class="memory-caption">
+                <span>27</span>
+                The best moments ❤️
+            </div>
+        </div>
+
+
+        
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<center>
+
+<iframe width="560" height="315" src="vid 27.mp4" title="love" frameborder="0" allowfullscreen>
+</iframe>
+
+
+</center>
+
+
+
+
+
+
+
+
+
+
+        <!-- =========================
+             WISHES
+        ========================== -->
+
+        <section class="wishes-section">
+
+            <div class="wishes-container">
+
+                <p class="eyebrow">
+                    ✦ MY WISH FOR YOU ✦
+                </p>
+
+                <h2>
+                    May life give you
+                    <br>
+                    <span>everything beautiful.</span>
+                </h2>
+
+
+                <div class="wish-grid">
+
+                    <div class="wish">
+                        <div>🌙</div>
+                        <h3>Peace</h3>
+                        <p>
+                            May your heart always find peace.
+                        </p>
+                    </div>
+
+                    <div class="wish">
+                        <div>✨</div>
+                        <h3>Dreams</h3>
+                        <p>
+                            May your dreams find their way to you.
+                        </p>
+                    </div>
+
+                    <div class="wish">
+                        <div>❤️</div>
+                        <h3>Happiness</h3>
+                        <p>
+                            May your days be filled with happiness.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL SURPRISE
+        ========================== -->
+
+        <section class="final-section">
+
+            <div class="final-glow"></div>
+
+            <div class="final-content">
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+                <p class="eyebrow">
+                    AND FINALLY...
+                </p>
+
+                <h2>
+                    Happy Birthday
+                </h2>
+
+                <h1>
+                    To You My Wife ✨
+                </h1>
+
+                <p>
+                    May your next chapter be your
+                    most beautiful one yet.
+                </p>
+
+                <div class="final-confetti">
+                    🎉 &nbsp; 🎂 &nbsp; 🎁 &nbsp; 🎈 &nbsp; 🎊
+                </div>
+
+                <button class="replay-btn" onclick="replay()">
+                    ↻ See It Again
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            Made with ❤️ for someone special in my life
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
