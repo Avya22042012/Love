@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8eee9">
+    <title>A Birthday Letter for You 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+    <div class="paper-texture"></div>
+
+    <!-- LOGIN -->
+    <section class="login-screen" id="loginScreen">
+        <div class="login-box">
+            <div class="login-flower">✿</div>
+            <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+            <h2>Welcome, my love</h2>
+            <p class="login-copy">Enter your secret details to open your letter.</p>
+            <label for="userId">Your special ID</label>
+            <input type="text" id="userId" placeholder="User ID" autocomplete="username">
+            <label for="userPassword">Your secret password</label>
+            <input type="password" id="userPassword" placeholder="Password" autocomplete="current-password">
+            <button id="loginBtn" class="primary-btn">Open my surprise <span>♡</span></button>
+            <div class="login-error" id="loginError">That doesn't look right. Try again, sweetheart.</div>
+            <small>Made with love, just for you</small>
+        </div>
+    </section>
+
+    <button class="music-btn" type="button" onclick="toggleMusic()" aria-label="Play music">♫</button>
+    <audio id="music" loop>
+        <!-- Add your own music file here if you want background music. -->
+        <!-- <source src="music.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <!-- ENVELOPE / GREETING CARD COVER -->
+    <section class="intro" id="intro">
+        <div class="intro-sparkle sparkle-one">✦</div>
+        <div class="intro-sparkle sparkle-two">✧</div>
+        <div class="envelope-scene">
+            <div class="envelope">
+                <div class="envelope-back"></div>
+                <div class="letter-peek">
+                    <span class="letter-small">A special letter</span>
+                    <strong>For You</strong>
+                    <span class="letter-heart">♡</span>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="wax-seal">S</div>
+            </div>
+            <p class="cover-kicker">TO MY FAVOURITE PERSON</p>
+            <h1>A little note<br><em>from my heart</em></h1>
+            <p class="intro-text">A tiny surprise, filled with love, memories and wishes made only for you.</p>
+            <button class="open-btn" onclick="openSurprise()">
+                <span>Open your birthday card</span><b>♡</b>
+            </button>
+            <div class="tap-hint">✧ MADE WITH LOVE ✧</div>
+        </div>
+    </section>
+
+    <!-- INSIDE OF THE GREETING CARD -->
+    <main id="main">
+        <section class="hero greeting-panel">
+            <div class="corner-flower top-left">✿</div>
+            <div class="corner-flower bottom-right">❀</div>
+            <div class="hero-content">
+                <p class="eyebrow">A DAY AS LOVELY AS YOU</p>
+                <div class="tiny-divider"><span>♡</span></div>
+                <h1 class="birthday-title">Happy <em>Birthday</em></h1>
+                <div class="name">Meri Patni</div>
+                <div class="cake">🎂</div>
+                <p class="hero-message">To the one who makes ordinary days feel magical.<br>May your world always be full of love.</p>
+                <a class="scroll-down" href="#letter">Read your letter <span>↓</span></a>
+            </div>
+        </section>
+
+        <section class="typing-section" id="letter">
+            <div class="section-container paper-card">
+                <p class="eyebrow">A FEW WORDS FROM MY HEART</p>
+                <h2>Some feelings are<br><em>too beautiful for words...</em></h2>
+                <div class="typing-box"><span id="typing"></span><span class="cursor">|</span></div>
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <article class="letter-card">
+                <div class="letter-top">✿ &nbsp; A LETTER FOR YOU &nbsp; ✿</div>
+                <p class="eyebrow">MY DEAREST</p>
+                <h2>Dear Birthday Girl,</h2>
+                <div class="letter-line"></div>
+                <p>Today isn't just another date on the calendar. It's a reminder of how wonderful it is that someone like you exists.</p>
+                <p>I hope this year brings you moments that make you laugh until your cheeks hurt, memories that stay with you forever, and dreams that slowly become reality.</p>
+                <p>Never forget how special you are to me. Keep your beautiful smile, keep believing in yourself, and keep shining in your own way.</p>
+                <p class="gold-text">May your happiest days be ahead of you. ✨</p>
+                <div class="signature">With all my love, always ♡</div>
+                <div class="letter-bottom">✧ &nbsp; FOREVER YOURS &nbsp; ✧</div>
+            </article>
+        </section>
+
+        <section class="memories-section" id="memories">
+            <div class="section-heading">
+                <p class="eyebrow">OUR LITTLE COLLECTION</p>
+                <h2>Beautiful <em>Memories</em></h2>
+                <p class="section-subtitle">Every picture holds a moment, and every moment is special because it's ours.</p>
+                <div class="tiny-divider"><span>♡</span></div>
+            </div>
+            <div class="gallery">
+        <figure class="memory-card">
+            <img src="photo1.jpg" alt="Beautiful memory 01" loading="lazy">
+            <figcaption><span>01</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo2.jpg" alt="Beautiful memory 02" loading="lazy">
+            <figcaption><span>02</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo3.jpg" alt="Beautiful memory 03" loading="lazy">
+            <figcaption><span>03</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo4.jpg" alt="Beautiful memory 04" loading="lazy">
+            <figcaption><span>04</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo5.jpg" alt="Beautiful memory 05" loading="lazy">
+            <figcaption><span>05</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo6.jpg" alt="Beautiful memory 06" loading="lazy">
+            <figcaption><span>06</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo7.jpg" alt="Beautiful memory 07" loading="lazy">
+            <figcaption><span>07</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo8.jfif" alt="Beautiful memory 08" loading="lazy">
+            <figcaption><span>08</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo9.jfif" alt="Beautiful memory 09" loading="lazy">
+            <figcaption><span>09</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo10.jfif" alt="Beautiful memory 10" loading="lazy">
+            <figcaption><span>10</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo11.jfif" alt="Beautiful memory 11" loading="lazy">
+            <figcaption><span>11</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo12.jpg" alt="Beautiful memory 12" loading="lazy">
+            <figcaption><span>12</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo13.jfif" alt="Beautiful memory 13" loading="lazy">
+            <figcaption><span>13</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo14.jfif" alt="Beautiful memory 14" loading="lazy">
+            <figcaption><span>14</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo15.jpg" alt="Beautiful memory 15" loading="lazy">
+            <figcaption><span>15</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo16.jfif" alt="Beautiful memory 16" loading="lazy">
+            <figcaption><span>16</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo17.jfif" alt="Beautiful memory 17" loading="lazy">
+            <figcaption><span>17</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo18.jfif" alt="Beautiful memory 18" loading="lazy">
+            <figcaption><span>18</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo19.jfif" alt="Beautiful memory 19" loading="lazy">
+            <figcaption><span>19</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo20.jpg" alt="Beautiful memory 20" loading="lazy">
+            <figcaption><span>20</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo21.jfif" alt="Beautiful memory 21" loading="lazy">
+            <figcaption><span>21</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo22.jpeg" alt="Beautiful memory 22" loading="lazy">
+            <figcaption><span>22</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo23.jpeg" alt="Beautiful memory 23" loading="lazy">
+            <figcaption><span>23</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo24.jpeg" alt="Beautiful memory 24" loading="lazy">
+            <figcaption><span>24</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo25.jpeg" alt="Beautiful memory 25" loading="lazy">
+            <figcaption><span>25</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo26.jpeg" alt="Beautiful memory 26" loading="lazy">
+            <figcaption><span>26</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo27.jfif" alt="Beautiful memory 27" loading="lazy">
+            <figcaption><span>27</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo28.jpg" alt="Beautiful memory 28" loading="lazy">
+            <figcaption><span>28</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo29.jpg" alt="Beautiful memory 29" loading="lazy">
+            <figcaption><span>29</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo30.jpg" alt="Beautiful memory 30" loading="lazy">
+            <figcaption><span>30</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo31.jpg" alt="Beautiful memory 31" loading="lazy">
+            <figcaption><span>31</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo32.jpg" alt="Beautiful memory 32" loading="lazy">
+            <figcaption><span>32</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo33.jpg" alt="Beautiful memory 33" loading="lazy">
+            <figcaption><span>33</span> A little piece of forever ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+            <img src="photo34.jpg" alt="Beautiful memory 34" loading="lazy">
+            <figcaption><span>34</span> A little piece of forever ❤️</figcaption>
+        </figure>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="section-heading">
+                <p class="eyebrow">A MEMORY IN MOTION</p>
+                <h2>One more little <em>treasure</em></h2>
+            </div>
+            <div class="video-frame">
+                <video controls playsinline preload="metadata">
+                    <source src="vid 27.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <div class="wishes-container">
+                <p class="eyebrow">MY WISH FOR YOU</p>
+                <h2>May life bring you<br><em>all things beautiful.</em></h2>
+                <div class="wish-grid">
+                    <article class="wish"><div>☼</div><h3>Peace</h3><p>May your heart always feel calm, safe and loved.</p></article>
+                    <article class="wish"><div>✧</div><h3>Dreams</h3><p>May every beautiful dream find its way to you.</p></article>
+                    <article class="wish"><div>♡</div><h3>Happiness</h3><p>May your smile have a thousand reasons to stay.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-section">
+            <div class="final-content">
+                <div class="big-heart">♡</div>
+                <p class="eyebrow">AND ONE LAST THING...</p>
+                <h2>Happy Birthday</h2>
+                <h1>My Beautiful Wife</h1>
+                <p>If I could make one wish for you, it would be that you see yourself through my eyes and know how precious you are.</p>
+                <div class="final-confetti">✿ &nbsp; ♡ &nbsp; ✧ &nbsp; ♡ &nbsp; ✿</div>
+                <button class="replay-btn" onclick="replay()">Read your letter again ↻</button>
+            </div>
+        </section>
+        <footer>Made with endless love <span>♡</span> just for you</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
